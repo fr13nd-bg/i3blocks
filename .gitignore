@@ -1,0 +1,218 @@
+# i3blocks config file
+#
+# List of valid properties:
+#
+# align
+# color
+# background
+# border
+# border_left
+# border_right
+# border_top
+# border_bottom
+# command
+# full_text
+# instance
+# interval
+# label
+# min_width
+# name
+# separator
+# separator_block_width
+# short_text
+# signal
+# urgent
+
+# Global properties
+#
+# The top properties below are applied to every block, but can be overridden.
+# Each block command defaults to the script name to avoid boilerplate.
+command=/usr/share/i3blocks/scripts/$BLOCK_NAME
+
+full_text=
+align=center
+color=#92deeb
+separator_block_width=0
+min_width=70
+#border=#0d1116
+markup=pango
+
+
+#[separator]
+#full_text=<span background="#002b36" foreground="#eee8d5"></span>
+#min_width=5
+#border=#002b36
+#markup=pango
+
+
+#[mediaplayer]
+#label=♪
+#command=/usr/share/i3blocks/scripts/mediaplayer
+#instance=Lollypop
+#interval=5
+#signal=10
+#color=#586e75
+#background=#eee8d5
+#markup=pango
+
+
+[separator]
+full_text=<span background="#29363c" foreground="#eb4960"></span>
+min_width=5
+border=#29363c  
+markup=pango
+
+
+[volume]
+#label= 
+instance=Master
+interval=1
+signal=10
+command=/usr/share/i3blocks/scripts/volume-pulseaudio
+color=#356272
+background=#eb4960
+markup=pango
+
+
+[separator]
+full_text=<span background="#eb4960" foreground="#f8b194"></span>
+min_width=5
+border=#eb4960
+markup=pango
+
+
+[memory]
+label=
+separator=false
+interval=30
+color=#356272
+background=#f8b194   
+markup=pango
+
+[separator]
+full_text=<span background="#f8b194" foreground="#eee8d5"></span>
+min_width=5
+border=#f8b194
+markup=pango
+
+
+[cpu_usage]
+label=
+interval=10
+min_width=CPU: 100.00%
+#separator=false
+color=#356272
+background=#eee8d5
+markup=pango
+#[load_average]
+#interval=10
+
+
+[separator]
+full_text=<span background="#eee8d5" foreground="#f27380"></span>
+min_width=5
+border=#eee8d5
+markup=pango
+
+
+[temperature]
+label=
+command=/usr/share/i3blocks/scripts/temperature
+interval=5
+color=#eee8d5
+background=#355f7f
+markup=pango
+
+
+[separator]
+full_text=<span background="#f27380" foreground="#eb4960"></span>
+min_width=5
+border=#f27380
+markup=pango
+
+[disk]
+label=
+#instance=/mnt/data
+interval=30
+color=#fdf6e3
+background=#eb4960
+markup=pango
+
+
+[separator]
+full_text=<span background="#eb4960" foreground="#eee8d5"></span>
+min_width=5
+border=#eb4960
+markup=pango
+
+
+[wifi]
+label=
+instance=wlxf81a671d58bc
+interval=10
+separator=false
+color=#356272
+background=#eee8d5
+markup=pango
+
+
+[separator]
+full_text=<span background="#eee8d5" foreground="#586e75"></span>
+min_width=5
+border=#eee8d5
+markup=pango
+
+
+[battery]
+label=
+#label=⚡
+#instance=1
+interval=30
+color=#fdf6e3
+background=#586e75
+markup=pango
+
+
+[separator]
+full_text=<span background="#586e75" foreground="#29363c"></span>
+min_width=5
+border=#586e75
+markup=pango
+
+
+[time]
+label=
+command=date '+%H:%M'
+interval=1
+color=#fdf6e3
+background=#29363c
+markup=pango
+
+[separator]
+full_text=<span background="#29363c" foreground="#29363c"></span>
+min_width=5
+border=#29363c
+markup=pango
+
+#=========================================================================
+
+#[memory]
+#label=SWAP
+#instance=swap
+#separator=false
+#interval=30
+
+
+#[iface]
+#instance=wlan0
+#color=#00FF00
+#interval=10
+#separator=false
+
+
+#[bandwidth]
+#instance=eth0
+interval=5
+
+
+
